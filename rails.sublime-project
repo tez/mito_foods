@@ -1,0 +1,12 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/tez/work/rails/mito_foods"
+		}
+	],
+  "settings":
+  {
+      "ruby_check_on_save_cmd": "/Users/tez/.rbenv/versions/1.9.3-p286/bin/ruby"
+  }
+}
