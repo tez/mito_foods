@@ -66,3 +66,11 @@ MitoFoods::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+#== Route Map
+# Generated on 27 Dec 2012 05:18
+#
+#      root     /                    static_pages#home
+#    signup     /signup(.:format)    users#new
+#      help     /help(.:format)      static_pages#help
+#     about     /about(.:format)     static_pages#about
+#   contact     /contact(.:format)   static_pages#contact
