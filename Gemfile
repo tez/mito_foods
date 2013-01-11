@@ -14,6 +14,7 @@ end
 
 group :development do
   gem 'annotate', '2.5.0'
+  gem 'pry-rails'
 end
 
 # Gems used only for assets and not required
@@ -31,6 +32,7 @@ group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
+  gem 'factory_girl_rails', '4.1.0'
 end
 
 # Test gems on Linux
