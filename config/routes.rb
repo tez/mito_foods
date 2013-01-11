@@ -1,5 +1,5 @@
 MitoFoods::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   root to: 'static_pages#home'
 
@@ -67,10 +67,16 @@ MitoFoods::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 end
 #== Route Map
-# Generated on 27 Dec 2012 05:18
+# Generated on 09 Jan 2013 05:40
 #
-#      root     /                    static_pages#home
-#    signup     /signup(.:format)    users#new
-#      help     /help(.:format)      static_pages#help
-#     about     /about(.:format)     static_pages#about
-#   contact     /contact(.:format)   static_pages#contact
+#           POST   /users(.:format)          users#create
+#  new_user GET    /users/new(.:format)      users#new
+# edit_user GET    /users/:id/edit(.:format) users#edit
+#      user GET    /users/:id(.:format)      users#show
+#           PUT    /users/:id(.:format)      users#update
+#           DELETE /users/:id(.:format)      users#destroy
+#      root        /                         static_pages#home
+#    signup        /signup(.:format)         users#new
+#      help        /help(.:format)           static_pages#help
+#     about        /about(.:format)          static_pages#about
+#   contact        /contact(.:format)        static_pages#contact
