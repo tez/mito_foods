@@ -27,6 +27,7 @@ describe "Authentication" do
       it { should have_selector('title', text: user.name) }
       it { should have_selector('h1', text: user.name) }
       it { should have_link('Users', href: users_path) }
+      it { should have_link('Genres', href: genres_path) }
       it { should have_link('Profile', href: user_path(user)) }
       it { should have_link('Sign out', href: signout_path) }
       it { should_not have_link('Sign in', href: signin_path) }
@@ -73,6 +74,30 @@ describe "Authentication" do
         describe "visiting the user index" do
           before { visit users_path }
           it { should have_selector('title', text: 'Sign in') }
+        end
+      end
+
+      describe "in the Genres controller" do
+
+        describe "visiting the new page" do
+          before { visit new_genre_path }
+          it { should have_selector('title', text: 'Sign in') }
+        end
+
+        describe "visiting the edit page" do
+          before do
+            genre = FactoryGirl.create(:genre)
+            visit edit_genre_path(genre)
+          end
+          it { should have_selector('title', text: 'Sign in') }
+        end
+
+        describe "submitting to the udpate action" do
+          before do
+            genre = FactoryGirl.create(:genre)
+            put genre_path(genre)
+          end
+          specify { response.should redirect_to(signin_path) }
         end
       end
 
@@ -125,10 +150,18 @@ describe "Authentication" do
       let(:user) { FactoryGirl.create(:user) }
       let(:non_admin) { FactoryGirl.create(:user) }
 
-      before { sign_in(user) }
+      before { sign_in(non_admin) }
 
       describe "submitting a DELETE request to the Users#destroy" do
         before { delete user_path(user) }
+        specify { response.should redirect_to(root_path) }
+      end
+
+      describe "submitting a DELETE request to the Genres#destroy" do
+        before do
+          genre = FactoryGirl.create(:genre)
+          delete genre_path(genre)
+        end
         specify { response.should redirect_to(root_path) }
       end
     end

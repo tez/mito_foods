@@ -4,16 +4,32 @@
 		"selected_items":
 		[
 			[
-				"hav",
-				"have_link"
-			],
-			[
-				"user",
-				"user_path"
+				"sinin",
+				"signin_path"
 			],
 			[
 				"sign",
-				"sign_in"
+				"signing"
+			],
+			[
+				"pa",
+				"page"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"su",
+				"submitting"
+			],
+			[
+				"des",
+				"des	describe (String)"
+			],
+			[
+				"hav",
+				"have_link"
 			],
 			[
 				"bef",
@@ -316,10 +332,6 @@
 				"content"
 			],
 			[
-				"des",
-				"desired"
-			],
-			[
 				"sou",
 				"should"
 			],
@@ -439,7 +451,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 376.0
+		"width": 315.0
 	},
 	"console":
 	{
@@ -456,7 +468,21 @@
 	},
 	"file_history":
 	[
+		"/Users/tez/Projects/mito_foods/config/database.yml",
+		"/Users/tez/Projects/mito_foods/db/migrate/20130201101803_add_admin_to_users.rb",
+		"/Users/tez/Projects/mito_foods/spec/models/user_spec.rb",
+		"/Users/tez/Projects/mito_foods/spec/factories.rb",
+		"/Users/tez/Projects/mito_foods/Gemfile",
+		"/Users/tez/Projects/mito_foods/Guardfile",
+		"/Users/tez/Projects/mito_foods/app/assets/stylesheets/custom.css.scss",
+		"/Users/tez/Projects/mito_foods/spec/support/utilities.rb",
+		"/Users/tez/Library/Application Support/Sublime Text 2/Packages/User/RubyTest.sublime-settings",
+		"/Users/tez/Projects/mito_foods/rails.sublime-project",
+		"/Users/tez/Projects/mito_foods/spec/requests/user_pages_spec.rb",
+		"/Users/tez/Projects/mito_foods/spec/requests/authentication_pages_spec.rb",
+		"/Users/tez/Projects/mito_foods/app/views/users/new.html.erb",
 		"/Users/tez/Projects/mito_foods/lib/tasks/sample_data.rake",
+		"/Users/tez/Projects/mito_foods/app/views/users/_user.html.erb",
 		"/Users/tez/Projects/mito_foods/app/views/users/index.html.erb",
 		"/Users/tez/Projects/mito_foods/app/controllers/sessions_controller.rb",
 		"/Users/tez/Projects/mito_foods/app/helpers/sessions_helper.rb",
@@ -464,15 +490,7 @@
 		"/Users/tez/Projects/mito_foods/app/models/user.rb",
 		"/Users/tez/Projects/mito_foods/app/views/users/edit.html.erb",
 		"/Users/tez/Projects/mito_foods/app/controllers/users_controller.rb",
-		"/Users/tez/Projects/mito_foods/spec/factories.rb",
-		"/Users/tez/Projects/mito_foods/Gemfile",
-		"/Users/tez/Projects/mito_foods/Guardfile",
-		"/Users/tez/Projects/mito_foods/app/assets/stylesheets/custom.css.scss",
-		"/Users/tez/Projects/mito_foods/spec/support/utilities.rb",
-		"/Users/tez/Library/Application Support/Sublime Text 2/Packages/User/RubyTest.sublime-settings",
-		"/Users/tez/Projects/mito_foods/spec/requests/authentication_pages_spec.rb",
-		"/Users/tez/Projects/mito_foods/rails.sublime-project",
-		"/Users/tez/Projects/mito_foods/spec/requests/user_pages_spec.rb",
+		"/Users/tez/Projects/mito_foods/app/views/users/_fields.html.erb",
 		"/Users/tez/Projects/mito_foods/lib/tasks/sample_data.rb",
 		"/Users/tez/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/tez/work/rails/mito_foods/spec/helpers/application_helper_spec.rb",
@@ -521,6 +539,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fill",
+			"destroy",
+			"user.page",
+			"user.oage",
 			"Bob",
 			"name",
 			"password_field",
@@ -657,12 +679,56 @@
 		"selected_items":
 		[
 			[
-				"",
-				"spec/requests/user_pages_spec.rb"
+				"auth",
+				"spec/requests/authentication_pages_spec.rb"
 			],
 			[
 				"user",
+				"spec/requests/user_pages_spec.rb"
+			],
+			[
+				"",
+				"app/views/users/_fields.html.erb"
+			],
+			[
+				"edit",
+				"app/views/users/edit.html.erb"
+			],
+			[
+				"_fi",
+				"app/views/users/_fields.html.erb"
+			],
+			[
+				"new",
+				"app/views/users/new.html.erb"
+			],
+			[
+				"index",
+				"app/views/users/index.html.erb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"authe",
+				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"user_con",
 				"app/controllers/users_controller.rb"
+			],
+			[
+				"fact",
+				"spec/factories.rb"
+			],
+			[
+				"add_ad",
+				"db/migrate/20130201101803_add_admin_to_users.rb"
+			],
+			[
+				"user_s",
+				"spec/models/user_spec.rb"
 			],
 			[
 				"inde",
@@ -711,10 +777,6 @@
 			[
 				"uti",
 				"spec/support/utilities.rb"
-			],
-			[
-				"auth",
-				"spec/requests/authentication_pages_spec.rb"
 			],
 			[
 				"usercon",
@@ -791,10 +853,6 @@
 			[
 				"fa",
 				"spec/factories.rb"
-			],
-			[
-				"new",
-				"app/views/users/new.html.erb"
 			],
 			[
 				"show",
@@ -937,10 +995,6 @@
 				"spec/requests/authentication_pages_spec.rb"
 			],
 			[
-				"user_con",
-				"app/controllers/users_controller.rb"
-			],
-			[
 				"userpa",
 				"spec/requests/user_pages_spec.rb"
 			],
@@ -1049,10 +1103,6 @@
 				"app/controllers/microposts_controller.rb"
 			],
 			[
-				"edit",
-				"app/views/users/edit.html.erb"
-			],
-			[
 				"sta",
 				"app/controllers/static_pages_controller.rb"
 			],
@@ -1125,10 +1175,6 @@
 				"app/helpers/users_helper.rb"
 			],
 			[
-				"authe",
-				"spec/requests/authentication_pages_spec.rb"
-			],
-			[
 				"auto",
 				"features/step_definitions/authentication_steps.rb"
 			],
@@ -1143,30 +1189,6 @@
 			[
 				"utili",
 				"spec/support/utilities.rb"
-			],
-			[
-				"n",
-				"app/views/sessions/new.html.erb"
-			],
-			[
-				"u",
-				"spec/models/user_spec.rb"
-			],
-			[
-				"userco",
-				"app/controllers/users_controller.rb"
-			],
-			[
-				"applia",
-				"app/assets/javascripts/application.js"
-			],
-			[
-				"en",
-				"config/locales/en.yml"
-			],
-			[
-				"prod",
-				"config/environments/production.rb"
 			]
 		],
 		"width": 0.0
@@ -1182,7 +1204,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true
 }

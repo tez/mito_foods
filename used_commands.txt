@@ -1,0 +1,2 @@
+rails generate controller Genres new --no-test-framework
+rails generate model Genre name:string description:string

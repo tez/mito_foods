@@ -1,4 +1,7 @@
 MitoFoods::Application.routes.draw do
+  get "genres/new"
+
+  resources :genres
   resources :users
   resources :sessions, only: [ :new, :create, :destroy ]
 

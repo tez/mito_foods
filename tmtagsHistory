@@ -1,0 +1,6 @@
+<dt><span class="filename"><a href="txmt://open?url=file:///Users/tez/Projects/mito_foods/spec/models/genre_spec.rb&line=">genre_spec.rb: -- /Users/tez/Projects/mito_foods/spec/models</a></span><br><div class="code"></div></dt>
+<dt><span class="filename"><a href="txmt://open?url=file:///Users/tez/Projects/mito_foods/app/models/user.rb&line=">user.rb: -- /Users/tez/Projects/mito_foods/app/models</a></span><br><div class="code"></div></dt>
+<dt><span class="filename"><a href="txmt://open?url=file:///Users/tez/Projects/mito_foods/spec/models/genre_spec.rb&line=16">genre_spec.rb:16 -- /Users/tez/Projects/mito_foods/spec/models</a></span><br><div class="code">  before{ @genre = Genre.new }</div></dt>
+<dt><span class="filename"><a href="txmt://open?url=file:///Users/tez/Projects/mito_foods/app/models/user.rb&line=">user.rb: -- /Users/tez/Projects/mito_foods/app/models</a></span><br><div class="code"></div></dt>
+<dt><span class="filename"><a href="txmt://open?url=file:///Users/tez/Projects/mito_foods/spec/models/user_spec.rb&line=">user_spec.rb: -- /Users/tez/Projects/mito_foods/spec/models</a></span><br><div class="code"></div></dt>
+<dt><span class="filename"><a href="txmt://open?url=file:///Users/tez/Projects/mito_foods/spec/models/user_spec.rb&line=">user_spec.rb: -- /Users/tez/Projects/mito_foods/spec/models</a></span><br><div class="code"></div></dt>

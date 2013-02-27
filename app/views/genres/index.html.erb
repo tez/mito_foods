@@ -1,0 +1,10 @@
+<% provide(:title, "All genres") %>
+<h1>All genres</h1>
+
+<ul class="genres">
+	<%= render @genres %>
+</ul>
+
+<%= will_paginate %>
+
+<%= link_to "New genre", new_genre_path, class: "btn" %>

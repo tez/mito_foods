@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 FactoryGirl.define do
   factory :user do
     sequence(:name) { |n| "Person #{n}" }
@@ -8,5 +10,10 @@ FactoryGirl.define do
     factory :admin do
       admin true
     end
+  end
+
+  factory :genre do
+    sequence(:name) { |n| "Genre #{n}" }
+    sequence(:description) { |n| "Genre description #{n}" }
   end
 end

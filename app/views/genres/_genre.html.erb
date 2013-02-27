@@ -1,0 +1,8 @@
+<li>
+	<%= link_to genre.name, genre %>
+  <% if signed_in? and current_user.admin? %>
+    | <%= link_to "edit", edit_genre_path(genre) %>
+    | <%= link_to "delete", genre, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+  <% end %>
+</li>
