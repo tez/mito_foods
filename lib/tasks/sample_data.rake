@@ -3,6 +3,7 @@ namespace :db do
   task populate: :environment do
     make_users
     make_genres
+    make_areas
   end
 end
 
@@ -30,6 +31,16 @@ def make_users
       description = Faker::Lorem.sentence(5)
       Genre.create!(name: name,
                     description: description)
+    end
+  end
+
+  def make_areas
+    Area.delete_all
+    100.times do |n|
+      name = Faker::Name.name
+      description = Faker::Lorem.sentence(5)
+      Area.create!(name: name,
+                   description: description)
     end
   end
 end

@@ -16,4 +16,9 @@ FactoryGirl.define do
     sequence(:name) { |n| "Genre #{n}" }
     sequence(:description) { |n| "Genre description #{n}" }
   end
+
+  factory :area do
+    sequence(:name) { |n| "Area #{n}" }
+    sequence(:description) { |n| "Area description #{n}" }
+  end
 end

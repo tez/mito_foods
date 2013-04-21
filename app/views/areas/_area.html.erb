@@ -1,0 +1,8 @@
+<li>
+  <%= link_to area.name, area %>
+  <% if signed_in? and current_user.admin? %>
+  | <%= link_to "edit", edit_area_path(area) %>
+  | <%= link_to "delete", area , method: :delete,
+                                data: { confirm: "You sure?" } %>    
+  <% end %>
+</li> 

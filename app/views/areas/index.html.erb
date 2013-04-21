@@ -1,0 +1,11 @@
+<% provide(:title, "All areas") %>
+
+<h1>All areas</h1>
+
+<ul class="areas">
+  <%= render @areas %>  
+</ul>
+
+<%= will_paginate %>
+
+<%= link_to "New area", new_area_path, class: "btn" %>

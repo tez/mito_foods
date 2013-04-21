@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: genres
+# Table name: genresrequire "genre_spec"
 #
 #  id          :integer          not null, primary key
 #  name        :string(255)

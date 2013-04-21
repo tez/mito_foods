@@ -35,10 +35,24 @@ describe "Genre pages" do
       end
     end
 
+    describe "edit link" do
+      it { should_not have_link('edit') }
+
+      describe "an admin user" do
+        let(:admin) { FactoryGirl.create(:admin) }
+        before do
+          sign_in admin
+          visit genres_path
+        end
+
+        it { should have_link('edit', href: edit_genre_path(Genre.first)) }
+      end
+    end
+
     describe "delete link" do
       it { should_not have_link('delete') }
 
-      describe "an admin user " do
+      describe "an admin user" do
         let(:admin) { FactoryGirl.create(:admin) }
         before do
           sign_in admin
@@ -62,6 +76,11 @@ describe "Genre pages" do
 
     let(:submit) { "Create new genre" }
 
+    describe "page" do
+      it { should have_selector('h1', text: "New genre") }
+      it { should have_selector('title', text: "New genre") }
+    end
+
     describe "with invalid information" do
       it "should not create a genre" do
         expect { click_button submit }.not_to change(Genre, :count)
@@ -69,7 +88,7 @@ describe "Genre pages" do
 
       describe "after submission" do
         before { click_button submit }
-        it { should have_selector('title', text: 'New Genre') }
+        it { should have_selector('title', text: 'New genre') }
         it { should have_content('error')}
       end
     end
@@ -84,7 +103,7 @@ describe "Genre pages" do
         expect { click_button submit }.to change(Genre, :count).by(1)
       end
 
-      describe "after saveing the genre" do
+      describe "after saving the genre" do
         before { click_button submit }
         let(:genre) { Genre.find_by_name('和食') }
 
@@ -125,7 +144,6 @@ describe "Genre pages" do
         click_button "Save changes"
       end
 
-
       it { should have_selector('title', text: new_name) }
       it { should have_selector('div.alert.alert-success') }
 
@@ -140,6 +158,5 @@ describe "Genre pages" do
 
     it { should have_selector('h1', text: genre.name) }
     it { should have_selector('title', text: genre.name) }
-
   end
 end
